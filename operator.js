@@ -4,7 +4,7 @@
 // ======================================================
 
 // CHANGE THIS IP ONLY IF LAPTOP 2'S IPv4 ADDRESS CHANGES
-const API = "http://10.37.13.201:5000";
+const API = "https://floodtriage.onrender.com";
 
 
 // ======================================================
