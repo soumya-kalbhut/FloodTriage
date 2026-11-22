@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FloodTriage | Emergency Help</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Flood<span>Triage</span></div>
+        <div class="connection">
+    <span class="dot" id="connectionDot"></span>
+    <span id="connectionText">Checking connection</span>
+</div>
+    </header>
+
+    <main>
+
+        <section class="intro">
+            <p class="eyebrow">EMERGENCY RESPONSE SYSTEM</p>
+            <h1>Need help?<br><span>We're listening.</span></h1>
+            <p class="description">
+                Send your emergency report to the rescue team.
+                Your location can help them find you.
+            </p>
+        </section>
+
+        <section class="emergency-card">
+
+            <div class="card-heading">
+                <span class="live-icon"></span>
+                EMERGENCY REPORT
+            </div>
+
+            <textarea
+                id="message"
+                placeholder="Example: Water has entered our house. Two people are trapped on the first floor..."
+                rows="4"
+            ></textarea>
+
+            <div class="location-box">
+                <div>
+                    <strong>Your location</strong>
+                    <p id="locationStatus">Not captured yet</p>
+                </div>
+
+                <button id="locationButton" class="location-button">
+                    GET LOCATION
+                </button>
+            </div>
+
+            <button id="submitButton" class="submit-button">
+                SEND EMERGENCY REPORT
+                <span>→</span>
+            </button>
+
+            <p id="submissionStatus" class="submission-status">
+                Your report will be sent to the rescue centre.
+            </p>
+
+        </section>
+
+        <footer>
+            <p>FLOODTRIAGE · EMERGENCY ASSISTANCE</p>
+            <p>In an emergency, every second matters.</p>
+        </footer>
+
+    </main>
+
+    <script src="user.js"></script>
+</body>
+</html>

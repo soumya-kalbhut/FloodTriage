@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FloodTriage | Rescue Operations</title>
+    <link rel="stylesheet" href="style1.css">
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+/>
+</head>
+<body>
+
+<header>
+    <div>
+        <h1>Flood<span>Triage</span></h1>
+        <p>RESCUE OPERATIONS CENTRE</p>
+    </div>
+    <div class="connection">
+        <span id="connectionDot"></span>
+        <span id="connectionText">Connecting...</span>
+    </div>
+</header>
+
+<main>
+    <section class="welcome">
+        <div>
+            <p class="eyebrow">LIVE EMERGENCY MONITORING</p>
+            <h2>Incident Dashboard</h2>
+            <p>Monitor incoming distress reports and coordinate response.</p>
+        </div>
+        <button id="refreshButton">↻ Refresh</button>
+    </section>
+<section class="map-section">
+    <h2>Live Incident Map</h2>
+    <p>Locations reported by people requesting rescue</p>
+    <div id="incidentMap"></div>
+</section>
+
+   <section class="stats">
+
+    <div class="stat">
+        <p>TOTAL REPORTS</p>
+        <h2 id="totalCount">0</h2>
+    </div>
+
+    <div class="stat high">
+        <p>HIGH PRIORITY</p>
+        <h2 id="highCount">0</h2>
+    </div>
+
+    <div class="stat review">
+        <p>NEEDS REVIEW</p>
+        <h2 id="reviewCount">0</h2>
+    </div>
+
+    <div class="stat low">
+        <p>LOW RISK</p>
+        <h2 id="lowCount">0</h2>
+    </div>
+
+</section>
+
+    <section class="reports-section">
+        <div class="section-heading">
+            <div>
+                <h2>Incoming Emergency Reports</h2>
+                <p id="lastUpdated">Waiting for reports...</p>
+            </div>
+        </div>
+
+        <div class="filters">
+            <button class="filter" data-filter="LOW">LOW RISK</button>
+            <button class="filter active" data-filter="ALL">All</button>
+            <button class="filter" data-filter="HIGH">High Priority</button>
+            <button class="filter" data-filter="REVIEW">Needs Review</button>
+        </div>
+
+        <div id="reportList">
+            <div class="empty">
+                Waiting for incoming emergency reports...
+            </div>
+        </div>
+    </section>
+</main>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="operator.js"></script>
+</body>
+</html>

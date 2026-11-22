@@ -1,0 +1,287 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #081321;
+    color: #f2f6fc;
+    font-family: Arial, sans-serif;
+    padding: 24px;
+}
+
+header {
+    max-width: 1100px;
+    margin: auto;
+    padding: 10px 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #26384e;
+}
+
+header h1 {
+    font-size: 25px;
+}
+
+header h1 span {
+    color: #43d5c4;
+}
+
+header p {
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #94a8bd;
+    margin-top: 6px;
+}
+
+.connection {
+    display: flex;
+    gap: 9px;
+    align-items: center;
+    color: #a9bdcf;
+    font-size: 12px;
+}
+
+#connectionDot {
+    width: 9px;
+    height: 9px;
+    background: orange;
+    border-radius: 50%;
+}
+
+main {
+    max-width: 1100px;
+    margin: 35px auto;
+}
+
+.welcome {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 28px;
+}
+
+.eyebrow {
+    color: #43d5c4;
+    font-size: 11px;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.welcome h2 {
+    font-size: 30px;
+    margin-bottom: 9px;
+}
+
+.welcome p:last-child {
+    color: #9aadc1;
+    font-size: 13px;
+}
+
+button {
+    cursor: pointer;
+}
+
+#refreshButton {
+    padding: 12px 18px;
+    background: #19334a;
+    color: white;
+    border: 1px solid #35516c;
+    border-radius: 8px;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 35px;
+}
+
+.stat {
+    background: #13243a;
+    border: 1px solid #2b4059;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.stat p {
+    color: #a2b3c6;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.stat h2 {
+    font-size: 32px;
+    margin-top: 12px;
+}
+
+.high h2 {
+    color: #ff7777;
+}
+
+.review h2 {
+    color: #f1c46c;
+}
+
+.reports-section {
+    background: #112238;
+    border: 1px solid #293e57;
+    border-radius: 13px;
+    padding: 22px;
+}
+
+.section-heading {
+    margin-bottom: 20px;
+}
+
+.section-heading h2 {
+    font-size: 19px;
+}
+
+.section-heading p {
+    color: #92a8bd;
+    font-size: 12px;
+    margin-top: 7px;
+}
+
+.filters {
+    display: flex;
+    gap: 9px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.filter {
+    background: #0b192a;
+    color: #aabbd0;
+    border: 1px solid #354b64;
+    border-radius: 20px;
+    padding: 9px 15px;
+    font-size: 12px;
+}
+
+.filter.active {
+    background: #1b786f;
+    border-color: #42d6c5;
+    color: white;
+}
+
+.report {
+    background: #0b192a;
+    border: 1px solid #2d435b;
+    border-radius: 10px;
+    padding: 17px;
+    margin-bottom: 13px;
+}
+
+.report-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.report-name {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.priority {
+    font-size: 10px;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.priority.HIGH {
+    color: #ff9292;
+    background: #48232b;
+}
+
+.priority.REVIEW {
+    color: #f4d18b;
+    background: #45371f;
+}
+
+.report-message {
+    line-height: 1.6;
+    font-size: 14px;
+    color: #e1eaf3;
+    overflow-wrap: anywhere;
+}
+
+.report-meta {
+    color: #91a6bb;
+    font-size: 11px;
+    margin-top: 13px;
+    line-height: 1.8;
+}
+
+.empty {
+    color: #91a6bb;
+    padding: 30px 10px;
+    text-align: center;
+    font-size: 13px;
+}
+
+@media(max-width: 650px) {
+    body {
+        padding: 14px;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .welcome {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .reports-section {
+        padding: 15px;
+    }
+}
+.map-section {
+    margin: 24px 0;
+}
+
+.map-section h2 {
+    margin-bottom: 6px;
+}
+
+.map-section p {
+    color: #94a3b8;
+    margin-bottom: 14px;
+}
+
+#incidentMap {
+    width: 100%;
+    height: 400px;
+    border-radius: 14px;
+    border: 1px solid #334155;
+    z-index: 1;
+}
+.remove-report {
+    margin-top: 14px;
+    padding: 9px 15px;
+    border: 1px solid #ef4444;
+    border-radius: 8px;
+    background: transparent;
+    color: #ef4444;
+    cursor: pointer;
+}
+
+.remove-report:hover {
+    background: #ef4444;
+    color: white;
+}
+
+.remove-report:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
