@@ -1,4 +1,4 @@
-const API = "http://10.37.13.201:5000";
+const API = "https://floodtriage.onrender.com";
 
 // User details
 let latitude = null;
